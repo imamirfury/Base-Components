@@ -8,6 +8,13 @@ import com.furybase.customviews.roundedViews.CornersHolder
 import com.furybase.customviews.roundedViews.RoundOutlineProvider
 
 
+/***
+ * Created By Amir Fury on December 14 2021
+ *
+ * Email: Fury.amir93@gmail.com
+ * */
+
+
 internal fun View.updateOutlineProvider(cornersHolder: CornersHolder) {
     outlineProvider = RoundOutlineProvider(cornersHolder)
 }

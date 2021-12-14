@@ -19,10 +19,14 @@ import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.BuildConfig
+import com.furybase.model.CountryModel
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.*
 import java.io.File
+import java.io.IOException
+import java.io.InputStream
+import java.nio.charset.Charset
 
 /***
  * Created By Amir Fury on December 9 2021
@@ -123,4 +127,24 @@ fun Context.fileSizeInMB(videoPath: String?): Long {
 fun Any.isGreaterThanOrEqualToOreo(): Boolean = Build.VERSION.SDK_INT >= Build.VERSION_CODES.O
 
 fun Any.isGreaterThanOrEqualToMarshmello(): Boolean = Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
+
+
+fun Context.fetchAllCountriesFromAssets(): ArrayList<CountryModel> {
+    val json = loadCountriesJson()
+    return json?.let { Gson().fromJson<ArrayList<CountryModel>>(it) } ?: arrayListOf()
+}
+
+fun Context.loadCountriesJson(): String? {
+    return try {
+        val inputStream: InputStream = assets.open("all_countries")
+        val size = inputStream.available()
+        val buffer = ByteArray(size)
+        inputStream.read(buffer)
+        inputStream.close()
+        String(buffer, Charset.forName("UTF-8"))
+    } catch (e: IOException) {
+        e.printStackTrace()
+        null
+    }
+}
 

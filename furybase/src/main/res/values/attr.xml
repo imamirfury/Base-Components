@@ -33,4 +33,22 @@
         <attr name="bottom_right_corner_radius"/>
         <attr name="bottom_left_corner_radius"/>
     </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width_1" format="dimension" />
+        <attr name="civ_border_color_1" format="color" />
+        <attr name="civ_border_overlay_1" format="boolean" />
+        <attr name="civ_fill_color_1" format="color" />
+        <attr name="civ_circle_background_color_1" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="fHorizontalSpacing" format="dimension"/>
+        <attr name="fVerticalSpacing" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_breakLine" format="boolean"/>
+        <attr name="layout_horizontalSpacing" format="dimension"/>
+    </declare-styleable>
 </resources>

@@ -5,7 +5,15 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.furybase.extension.dpToPx
 
-class ItemDecorator(
+
+/***
+ * Created By Amir Fury on December 14 2021
+ *
+ * Email: Fury.amir93@gmail.com
+ * */
+
+
+class FuryItemDecorator(
     private val top: Int,
     private val bottom: Int,
     private val left: Int,

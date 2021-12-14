@@ -8,6 +8,14 @@ import com.furybase.animations.BackOut
 import com.furybase.animations.QuintOut
 
 
+/***
+ * Created By Amir Fury on December 14 2021
+ *
+ * Email: Fury.amir93@gmail.com
+ * */
+
+
+
 fun View.visibleListWithScale(delay: Long, duration: Long) {
     val alpha = ObjectAnimator.ofFloat(this, View.ALPHA, 0f, 1f)
     alpha.startDelay = delay
