@@ -9,7 +9,6 @@ android {
     compileSdk 32
 
     defaultConfig {
-        multiDexEnabled = true
         minSdk 21
         targetSdk 32
         versionCode 1
@@ -46,9 +45,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     kapt 'com.android.databinding:compiler:3.2.0-alpha10'
-
-    implementation "androidx.multidex:multidex:2.0.1"
-
 
     /** Retrofit */
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
