@@ -40,7 +40,7 @@ android {
 dependencies {
 
 
-    implementation project(':furybase')
+    //    implementation project(':furybase')
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
@@ -52,5 +52,4 @@ dependencies {
     kapt 'com.android.databinding:compiler:3.2.0-alpha10'
     implementation "androidx.multidex:multidex:2.0.1"
 
-    implementation 'com.github.imamirfury:basecomponents:1.0.0'
 }
