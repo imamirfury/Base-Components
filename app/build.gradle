@@ -51,6 +51,6 @@ dependencies {
     kapt 'com.android.databinding:compiler:3.2.0-alpha10'
     implementation "androidx.multidex:multidex:2.0.1"
 
-    implementation 'com.github.imamirfury:basecomponents:1.0.0'
+    implementation 'com.github.imamirfury:basecomponents:v1.0.0'
 
 }

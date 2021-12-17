@@ -35,7 +35,7 @@ abstract class FuryBaseListAdapter<T>(diffCallBack: DiffUtil.ItemCallback<T>) :
         holder.bind(getItem(position))
     }
 
-    inner class FuryBaseViewHolder(private val binding: ViewDataBinding) :
+    inner class FuryBaseViewHolder(val binding: ViewDataBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: T) {
             binding.setVariable(BR.model, item)
