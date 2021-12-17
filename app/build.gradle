@@ -51,4 +51,5 @@ dependencies {
     kapt 'com.android.databinding:compiler:3.2.0-alpha10'
     implementation "androidx.multidex:multidex:2.0.1"
 
+
 }
