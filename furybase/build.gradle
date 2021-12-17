@@ -65,7 +65,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.imamirfury'
                 artifactId = 'furybase'
-                version = 'v1.0.0'
+                version = 'v1.0.1'
             }
         }
     }
