@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit
  * Email: Fury.amir93@gmail.com
  * */
 
-object ServiceGenerator {
+object FuryServiceGenerator {
 
     inline operator fun <reified T> invoke(
         baseUrl: String,
